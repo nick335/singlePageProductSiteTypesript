@@ -30,7 +30,7 @@ export default function Main({add, remove, qtn}: Qtnprops) {
   }, [screenSize])
 
   return (
-    <main className='lg:w-[72%] lg:mx-auto lg:flex items-center gap-[10%] lg:mt-6'>
+    <main className='lg:w-[72%] lg:mx-auto lg:flex items-center gap-[10%] lg:mt-6 pb-4'>
       {screenSize.dynamicWidth > 768 ? <DesktopImageSlider /> : <MobileImageSlide />}
       <ProductContent 
         add = {add}
