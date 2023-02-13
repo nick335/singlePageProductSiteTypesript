@@ -28,7 +28,9 @@ export default function LightGallery({idx, toggle, gallery}: Galleryporps) {
     product4
    ] 
 
-   console.log(index)
+   React.useEffect(() => {
+    setIndex(idx)
+   }, [idx])
    function SlideRight(){
     if(index < 3){
       setIndex(prevstate => {
@@ -36,6 +38,7 @@ export default function LightGallery({idx, toggle, gallery}: Galleryporps) {
       })
     }
    }
+
    function slideLeft(){
     if(index > 0){
       setIndex(prevstate => {

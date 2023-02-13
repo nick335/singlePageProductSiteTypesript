@@ -24,7 +24,6 @@ export default function DesktopImageSlider() {
     product3,
     product4
    ] 
-   console.log(index)
    const imgurl = images.map((each) => {
      return <div className=' inline-block w-[100%] rounded-xl'>
                 <img src={each} alt={each} className='h-[400px] w-[100%] rounded-xl object-fill inline-block' onClick={toggleGallery} />
